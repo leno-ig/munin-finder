@@ -87,7 +87,7 @@
 </form>
 <div id="graph">
 <%list.each_with_index do |png, idx|%>
-<%next unless png =~ /\/load2-/%>
+<%next unless png =~ /\/(load2|load_extended)-/%>
 <div>
 <a href="<%=png.sub(/-.+\.png$/, '.html')%>"><%=File.basename(File.dirname(png))%> :: <%=File.basename(png).split("-").first%></a>
 <a href="<%=png.sub(/-.+\.png$/, '.html')%>"><img src="<%=png%>" /></a>
