@@ -1,0 +1,19 @@
+h2. Munin Finderとは
+
+Muninで大量のホストを管理する場合に、
+全ホストのCPUを一覧でみるためのcgiです。
+
+"スクリーンショット":https://github.com/leno-ig/munin-finder/wiki/
+
+h2. 依存ライブラリ
+
+RHEL/CentOSの場合
+# ruby
+# rubygems
+# rubygems-rack
+
+h2. インストール
+
+finder.cgi, finder.erbをMuninのcgiディレクトリに配置します。
+通常は/var/www/html/munin/cgi
+
