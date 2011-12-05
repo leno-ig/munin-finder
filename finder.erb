@@ -47,6 +47,7 @@
   padding: 2px;
   display: block;
   margin-left: 20px;
+  cursor: pointer;
 }
 #graph {
   float: left;
@@ -142,6 +143,7 @@
           $("input[name='"+key+"'][title='"+val+"']").attr("checked",true);
         });
       });
+      update_graph();
     }
   }
   $(function(){restore_all()})
